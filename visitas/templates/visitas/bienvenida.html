@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Bienvenido a Jardinería</title>
+    <link rel="stylesheet" href="{% static 'visitas/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed; background-size: cover;">
+    <div class="welcome-container" style="background: rgba(255,255,255,0.85); border-radius: 20px; padding: 2rem; max-width: 600px; margin: 5rem auto; box-shadow: 0 0 30px rgba(0,0,0,0.2);">
+        <h1>🌿 Bienvenido a Jardinería App</h1>
+        <p class="lead">Gestiona tus solicitudes y jardineros fácilmente.</p>
+        <a href="{% url 'nueva_solicitud' %}" class="btn btn-success m-2">Solicitar visita</a>
+        <a href="{% url 'vista_empresa' %}" class="btn btn-primary m-2">Panel Empresa</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
